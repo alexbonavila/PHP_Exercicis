@@ -10,11 +10,11 @@ class LogToFile implements Logger{
     }
 }
 
-class LogToDatabase implements Logger{
+/*class LogToDatabase implements Logger{
     public function execute($message){
         var_dump('log the message to a database');
     }
-}
+}*/
 
 //...
 
@@ -26,7 +26,7 @@ class UserController{
      * UserController constructor.
      * @param $logger
      */
-    public function __construct(LogToFile $logger)
+    public function __construct(Logger $logger)
     {
         $this->logger = $logger;
     }
