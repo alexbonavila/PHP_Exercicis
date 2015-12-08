@@ -1,9 +1,13 @@
 <?php
 
-interface
+interface Provider{
+    public function authorize();
+}
 
-function login($provider){
+function login(Provider $provider){
     if($provider)
         $provider->authorize();
-    
+
 }
+
+Auth::attempt()
