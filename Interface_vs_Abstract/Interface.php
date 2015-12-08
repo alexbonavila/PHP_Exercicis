@@ -10,4 +10,4 @@ function login(Provider $provider){
 
 }
 
-Auth::attempt()
+Auth::attempt();
