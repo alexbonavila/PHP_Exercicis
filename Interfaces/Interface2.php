@@ -10,11 +10,11 @@ class LogToFile implements Logger{
     }
 }
 
-/*class LogToDatabase implements Logger{
+class LogToDatabase implements Logger{
     public function execute($message){
-        var_dump('log the message to a database');
+        var_dump('log the message to a database'. $message);
     }
-}*/
+}
 
 //...
 
