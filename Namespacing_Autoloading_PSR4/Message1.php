@@ -1,8 +1,10 @@
 <?php
 
-require 'src/Person.php';
-require 'src/Business.php';
-require 'src/Staff.php';
+use Acme\Users\Person;
+use Acme\Business;
+use Acme\Staff;
+
+
 
 $jeffrey = new Person('Jeffrey Way');
 

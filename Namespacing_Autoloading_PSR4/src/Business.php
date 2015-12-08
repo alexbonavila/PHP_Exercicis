@@ -1,4 +1,9 @@
 <?php
+
+namespace Acme;
+
+use Acme\Users\Person;
+
 class Business{
 
     protected $staff;
